@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Tia Neuma | Ensino Fundamental I em Fortaleza",
+  title: "Instituto Infantil Tia Neuma | Ensino Fundamental de Excelência em Fortaleza",
   description:
     "Desde 1978 educando crianças na Cidade 2000, Fortaleza. Ensino Fundamental de excelência.",
   icons: {
