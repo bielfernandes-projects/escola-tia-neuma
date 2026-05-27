@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 32% 25%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 32% 25%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 32% 25%;
+    --primary: 22 85% 72%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 32% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 20% 50%;
+    --accent: 22 85% 72%;
+    --accent-foreground: 215 32% 25%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 22 85% 72%;
+    --radius: 0.75rem;
+    --chart-1: 22 85% 72%;
+    --chart-2: 215 32% 25%;
+    --chart-3: 200 60% 50%;
+    --chart-4: 30 80% 60%;
+    --chart-5: 340 70% 55%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
