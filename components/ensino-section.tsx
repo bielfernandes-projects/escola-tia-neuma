@@ -28,7 +28,7 @@ export default function EnsinoSection() {
         <div className="mt-16 grid gap-12 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-2xl">
             <img
-              src="/fotos/sala-aula.jpg"
+              src="/fotos/sala-aula.png"
               alt="Alunos em sala de aula"
               className="h-full w-full object-cover"
             />
